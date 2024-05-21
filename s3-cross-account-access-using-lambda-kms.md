@@ -1,4 +1,4 @@
-# s3-cross-account-access-using-lamda
+# s3-cross-account-access-using-lamda-kms
 
 #### Actions on Account A
 - Create Custom KMS KEY and add KMS Key policy to allow  iAM role from account B to access KMS key:
@@ -76,7 +76,7 @@
       }
 
 
-  ### LAMBDA FUNCTION
+#### LAMBDA FUNCTION (Assign above role to lambda function)
 
       import json
       import boto3
