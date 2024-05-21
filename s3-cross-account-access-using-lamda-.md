@@ -49,9 +49,10 @@
 
       import json
       import boto3
-      
+
+      client = boto3.client('s3')
+          
       def lambda_handler(event, context):        
-          client = boto3.client('s3')
           object = client.get_object(Bucket="db-asset", Key="coffee.jpg")
           result = object['Body']
           
